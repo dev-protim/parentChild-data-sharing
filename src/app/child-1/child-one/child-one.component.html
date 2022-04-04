@@ -1,0 +1,12 @@
+<ng-container *ngIf="initial">
+    <div class="array-list">
+        <div class="array-list-item" *ngFor="let item of arrayList; let i = index;" [ngClass]="{'active': item.active}" (click)="itemSelect(item)">
+            <h3>{{item.title}}</h3>
+            <p>{{item.paragraph}}</p>
+        </div>
+    </div>
+    <button (click)="enterDetails()">See Details</button>
+</ng-container>
+<ng-container *ngIf="details">
+    <p>Details</p>
+</ng-container>

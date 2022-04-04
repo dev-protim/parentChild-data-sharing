@@ -1,0 +1,24 @@
+.array-list {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        border: 1px solid #d5d5d5;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        flex: 0 0 1;
+        width: calc(50% - 15px);
+        cursor: pointer;
+        &.active {
+            border-color: green;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+}
